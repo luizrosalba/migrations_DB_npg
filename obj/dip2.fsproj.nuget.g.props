@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/luiz/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/luiz/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/home/luiz/.nuget/packages/" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)entityframeworkcore.fsharp/5.0.3-beta004/build/net5.0/EntityFrameworkCore.FSharp.props" Condition="Exists('$(NuGetPackageRoot)entityframeworkcore.fsharp/5.0.3-beta004/build/net5.0/EntityFrameworkCore.FSharp.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNpgsql_EntityFrameworkCore_PostgreSQL Condition=" '$(PkgNpgsql_EntityFrameworkCore_PostgreSQL)' == '' ">/home/luiz/.nuget/packages/npgsql.entityframeworkcore.postgresql/5.0.7</PkgNpgsql_EntityFrameworkCore_PostgreSQL>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/luiz/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
+    <PkgEntityFrameworkCore_FSharp Condition=" '$(PkgEntityFrameworkCore_FSharp)' == '' ">/home/luiz/.nuget/packages/entityframeworkcore.fsharp/5.0.3-beta004</PkgEntityFrameworkCore_FSharp>
+  </PropertyGroup>
+</Project>

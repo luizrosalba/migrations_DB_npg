@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/luiz/code/dip2/dip2.fsproj": {}
+  },
+  "projects": {
+    "/home/luiz/code/dip2/dip2.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/luiz/code/dip2/dip2.fsproj",
+        "projectName": "dip2",
+        "projectPath": "/home/luiz/code/dip2/dip2.fsproj",
+        "packagesPath": "/home/luiz/.nuget/packages/",
+        "outputPath": "/home/luiz/code/dip2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/luiz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFrameworkCore.FSharp": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3-beta004, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.7, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/132/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
